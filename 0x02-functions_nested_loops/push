@@ -1,0 +1,17 @@
+#!/bin/bash
+# update readme file
+	# ask for the update and save the data
+	echo what to be updated to the readme file?
+	read readme
+	# add it to the README.md file
+	echo $readme >> README.md
+# add changes to the git repository removing this bash scripts
+	git add -A ':!.gitignore'
+# commit the changes to the repository
+	# get commit message
+	echo What is the commit message?
+	read commit
+	# add commit to the commit command
+	git commit -m "$commit"
+# push the update to the remote repository
+git push
