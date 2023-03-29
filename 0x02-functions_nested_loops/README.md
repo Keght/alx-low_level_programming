@@ -5,3 +5,4 @@ We wrote a function that checks for alphabetic character
 Wrote a function that prints the sign of a number.
 We wrote function that computes absolute value of integer
 We wrote a function printing last digit of number
+Wrote a function for find sum of integers
