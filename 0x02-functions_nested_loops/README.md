@@ -6,3 +6,4 @@ Wrote a function that prints the sign of a number.
 We wrote function that computes absolute value of integer
 We wrote a function printing last digit of number
 Wrote a function for find sum of integers
+Wrote a function that prints all natural numbers to 98
