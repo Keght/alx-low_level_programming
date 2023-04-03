@@ -1,58 +1,40 @@
 #include "main.h"
-
-void print_string(int i, int j, int a, char *str);
+#include <stdio.h>
 
 /**
- * puts_half - print the second half of string
- * @str: string to operate on
+ * puts_half - prints last half of the string
+ * @str: the string to operate on
  */
 
 void puts_half(char *str)
 {
-	int a = 0;
-	int i = 0;
-	int j = 0;
+	int i;
+	int n;
 
+	i = 0;
+	n = 0;
+	/* counting characters in the string */
 	while (*str != '\0')
 	{
+		n++;
 		str++;
-		a++;
 	}
+	str = str - n;
 
-	while (*str != '\0')
+	if (n % 2 == 0)
 	{
-		if (a % 2 == 0)
-		{
-			j = (a / 2);
-			print_string(i, j, a, str);
-		}
-		else
-		{
-			j = (a - 1) / 2;
-			print_string(i, j, a, str);
-		}
+		n = (n - 2) / 2;
 	}
-}
-
-/**
- * print_string - print string
- * @i: integer 1
- * @j: integer 2
- * @a: integer 3
- * @str: character string
- */
-
-void print_string(int i, int j, int a, char *str)
-{
-	while (i < j)
+	else if (n % 2 != 0)
+	{
+		n = ((n - 1) / 2) - 1;
+		str++;
+	}
+	while (*str != '\0' && i <= n)
 	{
 		str++;
+		_putchar(*(str + n));
 		i++;
 	}
-	while ((i >= j) && (i < a))
-	{
-		_putchar(*str);
-		str++;
-		i++;
-	}
+	_putchar('\n');
 }
