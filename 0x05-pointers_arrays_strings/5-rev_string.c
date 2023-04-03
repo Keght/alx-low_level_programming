@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * rev_string - prints a reversed string
@@ -7,22 +8,34 @@
 
 void rev_string(char *s)
 {
-	char a;
+	int i;
+	int j;
+	char *rev;
 
-	a = 0;
+	/**
+	 * Counting elements of string
+	 * copying elements to pointer rev to form literal string
+	 */
+	i = 0;
+	j = 0;
 	while (*s != '\0')
 	{
-		_putchar(*s);
+		*rev = *s;
+		i++;
+		j++;
 		s++;
-		a++;
+		rev++;
 	}
-	_putchar('\n');
-
-	while (a > 0)
+	*rev = '\0';
+	/* Copying the value of rev to s in reverse form */
+	s = (s - i);
+	while (*s != '\0' && i >= 0)
 	{
-		s--;
-		_putchar(*s);
-		a--;
+		rev--;
+		*s = *rev;
+		i--;
+		s++;
 	}
-	_putchar('\n');
+	*s = '\0';
+	s = (s - j);
 }
