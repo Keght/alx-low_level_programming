@@ -1,0 +1,13 @@
+	0X0B. C - malloc, free
+	______________________
+
+In this project, we will learn how to use malloc function to allocate memory.
+
+Tasks
+_____
+0. Float like a butterfly, sting like a bee
+
+Write a function that creates an array of chars, and initializes it with a specific char.
+	Prototype: char *create_array(unsigned int size, char c);
+	Returns NULL if size = 0
+	Returns a pointer to the array, or NULL if it fa
