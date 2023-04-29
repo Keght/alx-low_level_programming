@@ -7,3 +7,8 @@ char *create_array(unsigned int size, char c);
 #define _STRDUP_H
 char *_strdup(char *str);
 #endif
+
+#ifndef STR_CONCAT_H
+#define STR_CONCAT_H
+char *str_concat(char *s1, char *s2);
+#endif
