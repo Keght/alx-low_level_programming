@@ -22,3 +22,8 @@ int **alloc_grid(int width, int height);
 #define FREE_GRID_H
 int free_grid(int **grid, int height);
 #endif
+
+#ifndef ARGSTOSTR_H
+#define ARGSTOSTR_H
+char *argstostr(int ac, char **av);
+#endif
