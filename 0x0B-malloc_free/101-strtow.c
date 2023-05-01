@@ -18,6 +18,9 @@ char **strtow(char *str)
 	int j;
 	int i;
 
+	if (str == NULL || str == "")
+		return (NULL);
+
 	j = 0; /* word counter */
 	i = 0; /* character counter */
 	while ((*str) != '\0')
@@ -39,6 +42,8 @@ char **strtow(char *str)
 			}
 		}
 	}
+	if (j == 0)
+		return (NULL);
 
 	str = str - i;
 
