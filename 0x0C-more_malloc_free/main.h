@@ -17,3 +17,8 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 #define _CALLOC_H
 void *_calloc(unsigned int nmemb, unsigned int size);
 #endif
+
+#ifndef ARRAY_RANGE_H
+#define ARRAY_RANGE_H
+int *array_range(int min, int max);
+#endif
