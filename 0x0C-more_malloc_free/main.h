@@ -7,3 +7,13 @@ void *malloc_checked(unsigned int b);
 #define STRING_NCONCAT_H
 void *string_nconcat(char *s1, char *s2, unsigned int n);
 #endif
+
+#ifndef _CALLOC_H
+#define _CALLOC_H
+void *_calloc(unsigned int nmemb, unsigned int size);
+#endif
+
+#ifndef _CALLOC_H
+#define _CALLOC_H
+void *_calloc(unsigned int nmemb, unsigned int size);
+#endif
