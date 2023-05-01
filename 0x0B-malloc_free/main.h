@@ -27,3 +27,8 @@ int free_grid(int **grid, int height);
 #define ARGSTOSTR_H
 char *argstostr(int ac, char **av);
 #endif
+
+#ifndef STRTOW_H
+#define STRTOW_H
+char **strtow(char *str);
+#endif
