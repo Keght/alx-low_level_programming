@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 char **alo_store(char *ptr, char **strings);
 
@@ -18,7 +19,7 @@ char **strtow(char *str)
 	int j;
 	int i;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 
 	j = 0; /* word counter */
@@ -31,7 +32,7 @@ char **strtow(char *str)
 			str++;
 		}
 
-		while ((*str) != ' ')
+		while ((*str) != ' ' && (*str) != '\0')
 		{
 			i += 1;
 			str++;
