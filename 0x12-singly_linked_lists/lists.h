@@ -36,3 +36,8 @@ list_t *add_node(list_t **head, const char *str);
 #define ADD_NODE_END_H
 list_t *add_node_end(list_t **head, const char *str);
 #endif
+
+#ifndef FREE_LIST_H
+#define FREE_LIST_H
+void free_list(list_t *head);
+#endif
