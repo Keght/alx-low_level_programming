@@ -26,3 +26,8 @@ size_t print_list(const list_t *h);
 #define LIST_LEN_H
 size_t list_len(const list_t *h);
 #endif
+
+#ifndef ADD_NODE_H
+#define ADD_NODE_H
+list_t *add_node(list_t **head, const char *str);
+#endif
