@@ -17,8 +17,12 @@ typedef struct list_s
 } list_t;
 #endif
 
-#ifndef PRINT_LIST
-#define PRINT_LIST
+#ifndef PRINT_LIST_H
+#define PRINT_LIST_H
 size_t print_list(const list_t *h);
 #endif
 
+#ifndef LIST_LEN_H
+#define LIST_LEN_H
+size_t list_len(const list_t *h);
+#endif
